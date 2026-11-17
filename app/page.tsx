@@ -7,7 +7,7 @@ import React, { useState, useEffect } from 'react';
  * Minimalist Swiss-Editorial Portfolio
  */
 
-const DEFAULT_PORTRAIT = '/profile-photo.jpg';
+const DEFAULT_PORTRAIT = '/Portfolio/profile-photo.jpg';
 
 const ACCENT_PALETTES = [
   { id: 'coral', label: 'Coral', hex: '#F2A29B' },
