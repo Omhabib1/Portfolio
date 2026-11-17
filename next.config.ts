@@ -1,9 +1,12 @@
 import type { NextConfig } from "next";
 
+const repoName = 'portfolio';
+
 const nextConfig: NextConfig = {
-  /* config options here */
-  cacheComponents: true,
-  partialPrefetching: true,
+  output: 'export',
+  images: { unoptimized: true },
+  basePath: process.env.NODE_ENV === 'production' ? `/${repoName}` : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? `/${repoName}/` : '',
   turbopack: {
     rules: {
       "*.css": {
